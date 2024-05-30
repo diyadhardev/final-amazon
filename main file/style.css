@@ -1,0 +1,375 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Amazon Ember", sans-serif;
+}
+:root {
+  font-size: 10px;
+}
+/* Styling of navbar1 */
+.navbar1 {
+  width: inherit;
+  height: 6rem;
+  background-color: #0f1111;
+  display: flex;
+  align-items: center;
+}
+.nav-logo {
+  width: 11.5rem;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2px;
+}
+.logo {
+  background: url("../amazon_logo.png");
+  background-size: cover;
+  height: 5rem;
+  width: 11.3rem;
+}
+.global-loc {
+  margin-left: 2em;
+  height: 5rem;
+  padding-left: 14px;
+}
+.loc {
+  display: flex;
+  flex-direction: column;
+  width: 8.8rem;
+  height: 5rem;
+  margin: 5px 2px 5px 0px;
+}
+.line1 {
+  color: #cccccc;
+  font-size: 1.5rem;
+}
+.line2 {
+  color: #ffffff;
+  position: relative;
+  left: 2rem;
+  font-size: 2rem;
+}
+.global-loc i {
+  color: aliceblue;
+  position: relative;
+  bottom: 3.5rem;
+  font-size: 2rem;
+}
+
+.nav-search {
+  height: 6rem;
+  width: 57vw;
+  padding: 10px 4px 10px 3px;
+  display: flex;
+}
+.nav-search input {
+  width: 80%;
+  line-height: 1.5rem;
+  padding: 7px;
+  padding-left: 3px;
+  font-size: 1.5em;
+}
+#lists {
+  border-top-left-radius: 5px;
+  position: relative;
+  border-bottom-left-radius: 5px;
+  left: 1px;
+  background-color: #ffffff;
+  color: #0f1111;
+  padding: 7px;
+}
+
+.nav-search a {
+  background-color: #f08804;
+  width: 5.6rem;
+
+  height: 4rem;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+.nav-search a i {
+  color: black;
+  font-size: 1.8rem;
+}
+.nav-tools {
+  display: flex;
+  width: 100%;
+}
+.login-options {
+  display: flex;
+  flex-direction: column;
+  width: 38%;
+  justify-content: center;
+  align-items: flex-start;
+  height: 5rem;
+  padding-left: 10px;
+}
+.login-options .navline1,
+.login-options .navline2,
+.orders .navline1,
+.orders .navline2,
+.cart p,
+.cart i {
+  color: #ffffff;
+}
+.orders {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2px;
+  margin-left: 2rem;
+  padding-left: 10px;
+}
+.cart {
+  width: 6.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.cart i {
+  font-size: 2.6rem;
+}
+.cart p {
+  font-size: 1rem;
+}
+
+.navline1 {
+  font-size: 1.2rem;
+}
+.navline2 {
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+.navbar1 a,
+.navbar2 a {
+  text-decoration: none;
+}
+
+.navbar1 a:hover,
+.navbar2 a:hover {
+  outline: 1px solid white;
+}
+
+/* Styling of navbar2 */
+
+.navbar2 {
+  display: flex;
+  width: inherit;
+  height: 4rem;
+  background-color: #232f2e;
+}
+
+.menu {
+  color: #ffffff;
+  padding: 8px 9px;
+  width: 6rem;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4em;
+  margin-left: 2px;
+}
+.menu i {
+  margin-right: 6px;
+}
+.content {
+  display: flex;
+  height: 4rem;
+  font-size: 1.4em;
+  margin-left: 1rem;
+  width: 90vw;
+}
+.content a {
+  margin: 5px 0px 6px;
+  color: #ffffff;
+  padding: 8px 9px;
+  height: 2.9rem;
+}
+
+/* Styling of section */
+
+/* hero section styling */
+.carousel-container {
+  width: 100%;
+  height: 40rem; /* Adjust height as needed */
+  overflow: hidden;
+  position: relative;
+}
+.carousel-item {
+  width: 100%;
+  height: 100%;
+  /* display: none; */
+}
+.carousel-item img {
+  width: 100%;
+  height: 140%;
+  object-fit: cover;
+  transition: display 3s ease;
+}
+
+.button {
+  height: 40rem;
+  width: 5em;
+  position: absolute;
+  background: transparent;
+  bottom: 0em;
+  border: none;
+}
+
+#nextBtn {
+  right: 0rem;
+}
+.button i {
+  font-size: 5rem;
+  opacity: 0.7;
+}
+
+/* menu section styling */
+
+.menu-section {
+  background-color: hsl(168, 9%, 90%, 0.5);
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.box {
+  width: 23vw;
+  height: 40rem;
+  position: relative;
+  top: 11px;
+  padding-top: 5px;
+  margin: 6px 2px 18px 9px;
+  background-color: white;
+}
+.mainbox {
+  width: 100%;
+  height: 90%;
+  padding-left: 12px;
+  padding-right: 15px;
+}
+.productpic {
+  width: 100%;
+  height: 80%;
+  margin: 10px 0px 16px;
+}
+.img1 {
+  background: url("../ffr1.jpg");
+  background-size: cover;
+}
+.img2 {
+  background: url("../ffr2.jpg");
+  background-size: cover;
+}
+.img3 {
+  background: url("../ffr3.jpg");
+  background-size: cover;
+}
+.img4 {
+  background: url("../ffr4.jpg");
+  background-size: cover;
+}
+.img5 {
+  background: url("../fr2.jpg");
+  background-size: cover;
+}
+.img6 {
+  background: url("../fr3.jpg");
+  background-size: cover;
+}
+.img7 {
+  background: url("../fr4.jpg");
+  background-size: cover;
+}
+.img8 {
+  background: url("../sr1.jpg");
+  background-size: cover;
+}
+.img9 {
+  background: url("../sr2.jpg");
+  background-size: cover;
+}
+.img10 {
+  background: url("../sr3.jpg");
+  background-size: cover;
+}
+.img11 {
+  background: url("../tr2.jpg");
+  background-size: cover;
+}
+.img12 {
+  background: url("../tr1.jpg");
+  background-size: cover;
+}
+
+.box h3 {
+  padding-top: 10px;
+  font-size: 2.3rem;
+  margin-bottom: 21px;
+}
+.shop {
+  font-size: 2em;
+  margin-top: 10px;
+  text-decoration: none;
+  color: #007185;
+}
+
+/* footer styling */
+
+.BackToTop {
+  height: 4.4rem;
+  background-color: #37475a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Text {
+  font-size: 2rem;
+  color: white;
+}
+
+.main-footer {
+  background-color: #28374a;
+  opacity: 2;
+  display: flex;
+  justify-content: center;
+  height: 40rem;
+}
+.verticalrow {
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 10rem;
+}
+
+.Linkcol {
+  color: white;
+  margin-right: 4rem;
+  line-height: 2em;
+  list-style: none;
+}
+.Colhead {
+  font-size: 1.8rem;
+  font-weight: bolder;
+}
+.Linkcol a {
+  text-decoration: none;
+  color: #cccccc;
+  font-size: 1.6rem;
+}
+.Linkcol li {
+  list-style: none;
+}
+.top {
+  text-decoration: none;
+}
